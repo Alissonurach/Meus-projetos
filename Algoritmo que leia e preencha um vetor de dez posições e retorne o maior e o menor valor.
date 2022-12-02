@@ -1,0 +1,53 @@
+#include <stdio.h>
+
+int main()
+
+{
+
+   int vetorA[10];
+
+   int menor = 9999;
+
+   int maior = -9999;
+
+   
+
+   printf("Digite 10 valores para vetor \n");
+
+   for(int i=0 ;i<10; i++){
+
+       scanf("%d", &vetorA[i]);
+
+   }
+
+   
+
+   for(int i=0 ;i<10; i++){
+
+       if ( vetorA[i] > maior){
+
+           maior = vetorA[i];
+
+       }
+
+       
+
+       if ( vetorA[i] < menor){
+
+           menor = vetorA[i];
+
+       }
+
+   }  
+
+   
+
+   printf("Maior valor: %d\n\n", maior );
+
+   printf("Menor valor: %d", menor );    
+
+   
+
+   
+
+}
